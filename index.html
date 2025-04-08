@@ -1,1 +1,198 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WDYKA</title>
+        <meta name="description" content="A webpage with basic concepts about html and css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resources/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ol>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#HTML">HTML</a></li>
+                <li><a href="#CSS">CSS</a></li>
+                <li><a href="#footer">Author's info</a></li>
+            </ol>
+        </nav>
+
+        <header id="header">
+            <h1>What do you know about...</h1>
+            <h1>HTML and CSS</h1>
+            <p>
+                Hyper Text Markup Language and Cascading Style Sheets are the two basic languages used to create static webpages that display information in an aesthetic way. 
+                In this issue of WDYKA we'll be teaching you the basic syntax and words used by HTML and CSS to make pretty and useful websites. Lets begin!
+            </p>
+        </header>
+
+        <section class="HTML">
+            <h2 id="HTML">HTML</h2>
+            <h3>What is HTML?</h3>
+            <p>
+                Hyper Text Markup Language is a standard <em>markup</em> language (duh) that uses tags and attributes to create the structure or the "skeleton" of a website.
+                If you were to create a website using only HTML, it would look like this:
+            </p>
+            <p> Not very appealing right? That's why it is always used alongside CSS (We will get to CSS in a minute).</p>
+
+            <h3>HTML tags & elements</h3>
+            <p>
+                HTML <strong>tags</strong> are the building blocks used by HTML that tell our web browsers how to structure and display the content that is in them. 
+                They are enclosed in angle brackets (&lt; >) and can be opening (&lt;h1>) or closing (&lt;/h1>). There are also self-closing tags like &lt;img> which is used to add 
+                images.
+            </p>
+            <p>
+                An HTML <strong>element</strong> is composed of a starting tag, some content, and an end tag: 
+            </p>
+            <p>
+                &lt;h1>This is a heading&lt;/h1>
+            </p>
+            <p>
+                The HTML <strong>element</strong> is everything from the start tag to the end tag. 
+            </p>
+
+            <h3>HTML's most used tags</h3>
+            <p id="table_text">Here is a table with some of the most used HTML tags and their meanings:</p>
+            
+            <table class="first_table">
+                <tr>
+                    <th>Tag</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td>&lt;html></td>
+                    <td>Represents the root of an html document</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1/2/3/4/5/6></td>
+                    <td>Headers ranging from biggest (1) to smallest (6)</td>
+                </tr>
+                <tr>
+                    <td>&lt;p></td>
+                    <td>Defines a paragraph</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol></td>
+                    <td>Defines an ordered list</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul></td>
+                    <td>Defines an unordered list</td>
+                </tr>
+                <tr>
+                    <td>&lt;li></td>
+                    <td>Defines a list item inside a list</td>
+                </tr>
+                <tr>
+                    <td>&lt;head></td>
+                    <td>Contains the metadata of the webpage</td>
+                </tr>
+                <tr>
+                    <td>&lt;body></td>
+                    <td>Contains the contents of the webpage</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer></td>
+                    <td>Defines a footer</td>
+                </tr>
+                <tr>
+                    <td>&lt;div></td>
+                    <td>Defines a division in an html document</td>
+                </tr>
+                <tr>
+                    <td>&lt;img></td>
+                    <td>Used to embed an image</td>
+                </tr>
+                <tr>
+                    <td>&lt;video></td>
+                    <td>Used to embed a video</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="CSS">
+            <h2 id="CSS">CSS</h2>
+            <h3>What is CSS?</h3>
+            <p>
+                Cascading Style Sheets is a <em>style sheet</em> language (duh) that uses rules, selectors and declarations to add style to a webpage written using a markup language like HTML.
+            </p>
+            <p>
+                Together, HTML and CSS make the perfect duo.
+            </p>
+            
+            <h3>CSS rules, selectors, declarations, properties and values</h3>
+            <p>
+                CSS is a rule-based language where you specify styles that should be applied to elements in your webpage. 
+            </p>
+            <p>A CSS <strong>rule</strong> is made up of a <strong>selector</strong> and <strong>declarations</strong>.</p>
+            <pre>
+
+Selector ---> h1 {
+Declarations --------> color: black;
+                            font-weight: bold;
+            }
+            </pre>
+            <p>Declarations are made up of a <strong>property</strong> and a <strong>value</strong>.</p>
+            <pre>
+
+Property --> color: black; <-- Value
+            </pre>
+            <p>The above rule selects all the h1 elements and makes their text black and bold.</p>
+
+            <h3>How to use HTML and CSS together?</h3>
+            <p>In order to add CSS to your HTML you will have to link your '.css' file to your '.html' file using the amazing &lt;link> tag inside of the &lthead> definition.</p>
+            <p>Like this:</p>
+            <pre>
+
+&lt;link> rel="stylesheet" href="relative_path_to_your_css_file" &lt;/link>
+            </pre>
+            <p>Now you can make your website look amazing.</p>
+
+            <h3>CSS's most used properties</h3>
+            <div id="second_tableid">
+            <table class="second_table">
+                <tr>
+                    <td>color</td>
+                    <td>padding</td>
+                    <td>background</td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>font-size</td>
+                    <td>border</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>opacity</td>
+                    <td>text-align</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>display</td>
+                    <td>margin</td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>column</td>
+                    <td>border-radius</td>
+                </tr>
+            </table>
+            </div>
+        </section>
+
+        <section class="ending">
+            <p>And there you go, a very basic introduction to both HTML and CSS. I hope you enjoyed reading this article. Have a wonderful day.</p>
+        </section>    
+
+        <footer id="footer">
+            <p>Written by Jorge Rendon Gonzalez</p>
+            <p>email: jorgerendongonzalez06@gmail.com</p>
+            <p>github: Gorgisius</p>
+            <p>X: @JorgeRe58449698</p>
+        </footer>
+    </body>
+</html>
